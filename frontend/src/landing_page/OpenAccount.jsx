@@ -16,7 +16,7 @@ function OpenAccount() {
             variant="contained"
             className="mt-3"
             onClick={() =>
-              (window.location.href = "http://localhost:5173/signup")
+              (window.location.href = "https://onestock-frontend.onrender.com/signup")
             }
           >
             Sign up for free
