@@ -1,7 +1,7 @@
 import React from "react";
 import Awards from "./Award";
 import Stats from "./Stats";
-import Pricing from "./pricing";
+import Pricing from "./Pricing";
 import Education from "./Education";
 import Hero from "./Hero";
 
