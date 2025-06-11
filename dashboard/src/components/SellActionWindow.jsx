@@ -14,14 +14,14 @@ const SellActionWindow = ({ uid }) => {
   const handleSellClick = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/order/checkOrders",
+        "https://onestock-backend.onrender.com/order/checkOrders",
         {
           name: uid,
           qty: stockQuantity,
         }
       );
       if (response.data.exists) {
-        await axios.post("http://localhost:5000/order/newOrders", {
+        await axios.post("https://onestock-backend.onrender.com/order/newOrders", {
           name: uid,
           qty: stockQuantity,
           price: stockPrice,
