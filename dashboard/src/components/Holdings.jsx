@@ -8,7 +8,7 @@ function Holdings() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/holding/allHoldings")
+      .get("https://onestock-backend.onrender.com/holding/allHoldings")
       .then((res) => {
         setallHoldings(res.data);
         console.log(res.data);
