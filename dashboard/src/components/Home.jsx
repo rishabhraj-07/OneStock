@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const verifyToken = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5000/auth/verify", {
+        const { data } = await axios.get("https://onestock-backend.onrender.com/auth/verify", {
           withCredentials: true, //  Send cookies
         });
 
@@ -20,10 +20,10 @@ const Home = () => {
             position: "top-right",
           });
         } else {
-          window.location.href = "http://localhost:5173/login";
+          window.location.href = "https://onestock-frontend.onrender.com/login";
         }
       } catch (err) {
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://onestock-frontend.onrender.com/login";
       }
     };
 
