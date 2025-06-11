@@ -27,29 +27,6 @@ OneStock is a modern, responsive, and feature-rich full-stack trading platform b
 
 ---
 
-## 📂 Folder Structure
-
-OneStock/
-│
-├── backend/              # Node.js + Express backend
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── utils/
-│   └── server.js
-│
-├── frontend/             # React frontend
-│   ├── src/
-│   │   ├── landing_page/
-│   │   └── App.js
-│
-├── dashboard/            # (Optional Admin or user dashboard)
-│   ├── src/
-│   └── components/
-│
-└── README.md             # Project documentation
-
-
 ## 🛠️ Getting Started
 
 ### 1. Clone the Repository
