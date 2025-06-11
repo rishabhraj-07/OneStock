@@ -21,7 +21,7 @@ function Hero() {
             variant="contained"
             className="mb-5"
             onClick={() =>
-              (window.location.href = "http://localhost:5173/signup")
+              (window.location.href = "https://onestock-frontend.onrender.com/signup")
             }
           >
             Signup Now
