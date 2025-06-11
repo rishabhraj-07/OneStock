@@ -34,7 +34,7 @@ const Login = () => {
 
     try {
       const data = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://onestock-backend.onrender.com/auth/login",
         {
           ...formdata,
         },
@@ -45,7 +45,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:5174/dashboard";
+          window.location.href = "https://onestock-dashboard.onrender.com/dashboard";
         }, 2000);
       } else {
         handleError(message);
