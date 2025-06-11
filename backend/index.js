@@ -16,7 +16,7 @@ const positionsRoute = require("./routes/PositionRoute");
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["https://onestock-frontend.onrender.com", "https://onestock-dashboard.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
