@@ -6,7 +6,7 @@ function Positions() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/position/allPositions")
+      .get("https://onestock-backend.onrender.com/position/allPositions")
       .then((res) => {
         setallPositions(res.data);
         console.log(res.data);
