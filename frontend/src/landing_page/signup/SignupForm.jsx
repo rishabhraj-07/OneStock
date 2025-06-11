@@ -34,7 +34,7 @@ const SignupForm = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/auth/signup",
+        "https://onestock-backend.onrender.com/auth/signup",
         {
           ...inputValue,
         },
@@ -44,7 +44,7 @@ const SignupForm = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = "http://localhost:5174/dashboard";
+          window.location.href = "https://onestock-dashboard.onrender.com/dashboard";
         }, 1000);
       } else {
         handleError(message);
