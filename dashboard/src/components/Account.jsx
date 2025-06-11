@@ -27,7 +27,7 @@ export default function AccountMenu() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/auth/verify", { withCredentials: true })
+      .get("https://onestock-backend.onrender.com/auth/verify", { withCredentials: true })
       .then((res) => {
         if (res.data.status) {
           setUsername(res.data.user); //  Set the username
@@ -42,7 +42,7 @@ export default function AccountMenu() {
 
   const handleLogout = () => {
     removeCookie("token");
-    window.location.href = "http://localhost:5173/login";
+    window.location.href = "https://onestock-frontend.onrender.com/login";
   };
   return (
     <React.Fragment>
