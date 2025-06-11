@@ -7,7 +7,7 @@ function Orders() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/order/allOrders")
+      .get("https://onestock-backend.onrender.com/order/allOrders")
       .then((res) => {
         setallOrders(res.data);
       })
@@ -18,7 +18,7 @@ function Orders() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/order/deleteOrders/${id}`);
+      await axios.delete(`https://onestock-backend.onrender.com/order/deleteOrders/${id}`);
       setallOrders((prev) => prev.filter((order) => order._id !== id));
     } catch (err) {
       console.error("Error deleting order:", err);
